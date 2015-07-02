@@ -1,0 +1,14 @@
+<script type="text/javascript" src="libs/fluidbox/jquery.fluidbox.min.js"></script>
+<script>
+$(function () {
+    $('p img')
+      .wrap(
+        function() {
+          return "<a class='fld' href='" + $( this ).attr("src") + "'></a>";
+        }
+      )
+      .parents()
+      .filter('a.fld')
+      .fluidbox();
+});
+</script>
