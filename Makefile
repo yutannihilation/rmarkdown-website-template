@@ -2,7 +2,9 @@
 HTML_FILES := $(patsubst %.Rmd, %.html ,$(wildcard *.Rmd)) \
               $(patsubst %.md, %.html ,$(wildcard *.md))
 
-all: clean html index
+CACHE_DIRS := $(patsubst %.Rmd, %_cache ,$(wildcard *.Rmd)) \
+
+all: html index
 
 
 html: $(HTML_FILES)
@@ -16,6 +18,7 @@ html: $(HTML_FILES)
 .PHONY: clean index
 clean:
 	$(RM) $(HTML_FILES) index.html
+	$(RM) -r $(CACHE_DIRS)
 
 index:
 	Rscript generateIndex.R
