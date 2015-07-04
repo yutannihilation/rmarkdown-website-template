@@ -27,11 +27,7 @@
 </style>
 <link href='libs/fluidbox/css/fluidbox.css' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-<style type="text/css">
-pre code {
-  font-family: 'Source Code Pro', monospace;
-}
-</style>
+<link href='include/css/style.css' rel='stylesheet' type='text/css'>
 
 <style type="text/css">code{white-space: pre;}</style>
 <link rel="stylesheet"
@@ -97,19 +93,7 @@ img {
 <p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
 
 <script type="text/javascript" src="libs/fluidbox/jquery.fluidbox.min.js"></script>
-<script>
-$(function () {
-    $('p img')
-      .wrap(
-        function() {
-          return "<a class='fld' href='" + $( this ).attr("src") + "'></a>";
-        }
-      )
-      .parents()
-      .filter('a.fld')
-      .fluidbox();
-});
-</script>
+<script type="text/javascript" src="include/js/enable-fluidbox.js"></script>
 
 </div>
 

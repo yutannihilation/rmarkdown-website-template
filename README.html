@@ -26,11 +26,7 @@
 </style>
 <link href='libs/fluidbox/css/fluidbox.css' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-<style type="text/css">
-pre code {
-  font-family: 'Source Code Pro', monospace;
-}
-</style>
+<link href='include/css/style.css' rel='stylesheet' type='text/css'>
 
 <style type="text/css">code{white-space: pre;}</style>
 <link rel="stylesheet"
@@ -76,22 +72,23 @@ img {
 
 
 
-
+<div id="r-markdown-website-template" class="section level1">
+<h1>R Markdown Website Template</h1>
+<p>A lightweight version of this: <a href="https://github.com/rstudio/rmarkdown/tree/gh-pages" class="uri">https://github.com/rstudio/rmarkdown/tree/gh-pages</a></p>
+<p>Official Document is avaialbe here: <a href="http://rmarkdown.rstudio.com/html_document_format.html#creating-a-website" class="uri">http://rmarkdown.rstudio.com/html_document_format.html#creating-a-website</a></p>
+</div>
+<div id="how-to-use" class="section level1">
+<h1>How To Use</h1>
+<ol style="list-style-type: decimal">
+<li>Folk this repo</li>
+<li>Open the <code>.Rproj</code> file with Rstudio</li>
+<li>Build locally</li>
+<li>Push results to remote</li>
+</ol>
+</div>
 
 <script type="text/javascript" src="libs/fluidbox/jquery.fluidbox.min.js"></script>
-<script>
-$(function () {
-    $('p img')
-      .wrap(
-        function() {
-          return "<a class='fld' href='" + $( this ).attr("src") + "'></a>";
-        }
-      )
-      .parents()
-      .filter('a.fld')
-      .fluidbox();
-});
-</script>
+<script type="text/javascript" src="include/js/enable-fluidbox.js"></script>
 
 </div>
 
