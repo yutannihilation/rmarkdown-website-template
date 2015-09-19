@@ -18,7 +18,7 @@ local({
           <ul class="dropdown-menu" role="menu">', file = before_body)
 
   index <- jsonlite::fromJSON("index.json")
-  page_list  <- sort(sprintf('          <li><a href="%s">%s</a></li>', index$title, index$url))
+  page_list  <- sort(sprintf('          <li><a href="%s">%s</a></li>', index$url, index$title))
   cat(paste0(page_list, collapse = "\n"),
       file = before_body, append = TRUE)
 
